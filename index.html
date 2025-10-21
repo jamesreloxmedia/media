@@ -77,4 +77,12 @@
         <p>Copyright &copy; 2025</p>
     </footer>
 </body>
+
+    <script>
+function cleanURL(url) {
+  return url.replace(/^https?:\/\//, '').replace(/^www\./, '');
+}
+
+document.getElementById("urlDisplay").textContent = cleanURL("https://www.example.com");
+</script>
 </html>
