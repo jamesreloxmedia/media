@@ -76,24 +76,5 @@
     <footer>
         <p>Copyright &copy; 2025</p>
     </footer>
-
-<span id="domain"></span>
-
-<script>
-  // Get current URL (the one in your address bar)
-  const currentURL = window.location.href;
-
-  // Function to remove http(s)://, www., and anything after the domain
-  function cleanURL(url) {
-    return url
-      .replace(/^https?:\/\//, '')   // remove http:// or https://
-      .replace(/^www\./, '')         // remove www.
-      .replace(/\/.*$/, '');         // remove everything after the first slash
-  }
-
-  // Display it
-  document.getElementById('domain').textContent = cleanURL(currentURL);
-</script>
-    
 </body>
 </html>
